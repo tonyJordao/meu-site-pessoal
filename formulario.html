@@ -1,0 +1,72 @@
+t    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./CSS/formulario.css">
+    </head>
+    
+    <main>
+            <form action="">
+                <form onsubmit="event.preventDefault()">
+    
+                    <fieldset>
+                        <label for="input-nome">Nome</label>
+                        <input type="text" name="input-nome" id="input-nome">
+                        <input type="text" name="input-nome" id="input-nome" required minlength="2">
+                    </fieldset>
+    
+                    <fieldset>
+                        <label for="input-email">E-mail</label>
+                        <input type="email" name="input-email" id="input-email">
+                        <input type="email" name="input-email" id="input-email" required>
+                    </fieldset>
+    
+                    <fieldset>
+                        <label for="input-tel">Telefone</label>
+                        <input type="tel" name="input-tel" id="input-tel">
+                        <input type="tel" name="input-tel" id="input-tel" placeholder="(99) 99999-9999" required pattern="^\(\d{2}\) \d{5}-\d{4}$" maxlength="15">
+                    </fieldset>
+    
+                    <fieldset>
+    @@ -62,7 +62,7 @@ <h3>Desenvolvedor de Software</h3>
+                    </fieldset>
+    
+                    <center>
+                        <input type="submit" value="ENVIAR" class="button">
+                        <input type="submit" value="ENVIAR" class="button" onclick="enviarFormulario()">
+                    </center>
+        </form>
+    </main>
+   
+ <html>
+
+    <!-- <form onsubmit="event.preventDefault()">
+        <div class="field">
+            <i><img class="img-error" src="/img/error-icon.svg"></i>
+            <i><img class="img-sucess" src="/img/success-icon.svg"></i>
+            <small>Erro: preencha corretamente</small>
+            <input id="nome" type="text" placeholder="Nome">
+        </div>
+
+        <div class="field">
+            <i><img class="img-error" src="/img/error-icon.svg"></i>
+            <i><img class="img-sucess" src="/img/success-icon.svg"></i>
+            <small>Erro: preencha corretamente</small>
+            <input id="email" type="email" placeholder="E-mail">
+        </div>
+
+        <div class="field">
+            <i><img class="img-error" src="/img/error-icon.svg"></i>
+            <i><img class="img-sucess" src="/img/success-icon.svg"></i>
+            <small>Erro: preencha corretamente</small>
+            <input id="telefone" type="tel" placeholder="Telefone (Whatsapp)">
+        </div>
+
+        <div class="field">
+            <input id="mensagem" type="text" placeholder="Mensagem">
+        </div>
+        <input id="button-submit" type="submit" value="Enviar" onclick={enviarFormulario()}>
+    </form> -->
